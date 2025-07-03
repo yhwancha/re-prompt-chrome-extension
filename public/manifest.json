@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "RePrompt",
+    "version": "0.1.0",
+    "description": "Extracts AI prompts from YouTube and Instagram videos.",
+    "permissions": ["activeTab", "scripting", "bookmarks"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*", "*://*.instagram.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["icon.png"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }

@@ -1,0 +1,1 @@
+{"root":["./src/background/background.ts","./src/common/constants.ts","./src/common/utils.ts","./src/content/content.ts","./src/popup/app.tsx","./src/popup/index.tsx","./src/popup/popup.ts","./src/types/chrome.d.ts"],"version":"5.8.3"}

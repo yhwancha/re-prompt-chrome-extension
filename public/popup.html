@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css">
+    <title>RePrompt</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo"></div>
+        <h1 class="title">RePrompt</h1>
+      </div>
+      
+      <button id="generate" class="button">
+        Extract Video Info
+      </button>
+      
+      <div id="output" class="output" style="display: none;"></div>
+      <div id="loading" class="loading" style="display: none;">
+        <div class="spinner"></div>
+        <span>Processing...</span>
+      </div>
+    </div>
+
+    <script type="module" src="../src/popup/App.tsx"></script>
+  </body>
+</html> 
